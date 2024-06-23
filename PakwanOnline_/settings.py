@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 from decouple import config
 import os
+from django.urls import reverse_lazy
+
+# from .custom_email_backend import CustomEmailBackend
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'django.contrib.gis',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -78,6 +83,7 @@ WSGI_APPLICATION = 'PakwanOnline_.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+        # 'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': config('DB_NAME'),
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
@@ -130,3 +136,25 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'user.User'
+
+LOGIN_REDIRECT_URL = reverse_lazy('home')
+LOGOUT_REDIRECT_URL = reverse_lazy('home')
+
+# Email Configuration
+EMAIL_BACKEND = 'user.custom_email_backend.CustomEmailBackend'
+EMAIL_HOST = 'smtp.gamil.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_SSL = False
+EMAIL_HOST_USER = 'diwaneritesh@gmail.com'
+EMAIL_HOST_PASSWORD = 'Autoengrd@511'
+
+# EMAIL_BACKEND = config(EMAIL_BACKEND)
+# EMAIL_HOST = config(EMAIL_HOST)
+# EMAIL_PORT = 
+# EMAIL_USE_TLS =
+# EMAIL_HOST_SSL =
+# EMAIL_HOST_USER =
+# EMAIL_HOST_PASSWORD =

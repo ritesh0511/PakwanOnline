@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,40 +12,40 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800">
 	<!-- Google Font Family Link End -->
 	<!-- Bootstrap Link Start-->
-	<link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
-	<link href="assets/css/bootstrap-datepicker.css" rel="stylesheet">
-	<link href="assets/css/bootstrap-slider.css" rel="stylesheet">
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+	<link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">
+	<link href="{% static 'css/bootstrap-datepicker.css' %}" rel="stylesheet">
+	<link href="{% static 'css/bootstrap-slider.css' %}" rel="stylesheet">
 	<!-- Bootstrap Link End-->
 	<!-- Iconmoon Link Start-->
-	<link href="assets/css/iconmoon.css" rel="stylesheet">
+	<link href="{% static 'css/iconmoon.css' %}" rel="stylesheet">
 	<!-- Iconmoon Link End-->
 	<!-- Animate Link Start-->
-	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="{% static 'css/animate.css' %}" rel="stylesheet">
 	<!-- Animate Link End-->
 	<!-- Chosen Link Start-->
-	<link href="assets/css/chosen.css" rel="stylesheet">
+	<link href="{% static 'css/chosen.css' %}" rel="stylesheet">
 	<!-- Chosen Link End-->
 	<!-- Swiper Link Start-->
-	<link href="assets/css/swiper.css" rel="stylesheet">
+	<link href="{% static 'css/swiper.css' %}" rel="stylesheet">
 	<!-- Swiper Link End-->
 	<!-- Woocommerce Link Start-->
-	<link href="assets/css/woocommerce.css" rel="stylesheet">
+	<link href="{% static 'css/woocommerce.css' %}" rel="stylesheet">
 	<!-- Woocommerce Link End-->
 	<!-- Pretty Photo Link Start-->
-	<link href="assets/css/prettyPhoto.css" rel="stylesheet">
+	<link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
 	<!-- Pretty Photo Link End-->
 	<!-- Themes / plugin Link Start-->
-	<link href="style.css" rel="stylesheet">
-	<link href="assets/css/cs-foodbakery-plugin.css" rel="stylesheet">
-	<link href="assets/css/color.css" rel="stylesheet">
-	<link href="assets/css/widget.css" rel="stylesheet">
-	<link href="assets/css/responsive.css" rel="stylesheet">
-	<link href="assets/css/rtl.css" rel="stylesheet">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'css/cs-foodbakery-plugin.css' %}" rel="stylesheet">
+	<link href="{% static 'css/color.css' %}" rel="stylesheet">
+	<link href="{% static 'css/widget.css' %}" rel="stylesheet">
+	<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+	<link href="{% static 'css/rtl.css' %}" rel="stylesheet">
 	<!-- Themes / plugin Link End-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="assets/js/modernizr.js"></script>
-	<script src="assets/js/bootstrap.js"></script>
+	<script src="{% static 'js/modernizr.js' %}"></script>
+	<script src="{% static 'js/bootstrap.js' %}"></script>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -58,7 +59,7 @@
 	<!--Main Wrapper-->
 	<div class="wrapper">
 		<!-- Header Start -->
-		<header id="header">
+		<!-- <header id="header">
 			<div class="main-header">
 				<div class="container">
 					<div class="row">
@@ -83,7 +84,7 @@
 												<li><a href="food-cout.html">Food Court</a></li>
 												<li><a href="single-restaurant.html">Single Restaurant Demo</a></li>
 											</ul>
-											<!--End Sub Menu -->
+											End Sub Menu 
 										</li>
 										<li><a href="listings.html">Restaurants</a></li>
 										<li>
@@ -96,7 +97,7 @@
 												<li><a href="search-result.html">Search Result</a></li>
 												<li><a href="contact-us.html">Contact</a></li>
 											</ul>
-											<!--End Sub Menu -->
+											End Sub Menu
 										</li>
 										<li>
 											<a href="#">Blogs</a>
@@ -106,10 +107,10 @@
 												<li><a href="blog-masonry.html">Blog Masonry</a></li>
 												<li><a href="blog-detail.html">Blog Detail Page</a></li>
 											</ul>
-											<!--End Sub Menu -->
+											End Sub Menu
 										</li>
 									</ul>
-								</nav><!-- .main-navigation -->
+								</nav> .main-navigation
 							</div>
 							<div class="main-location">
 								<ul>
@@ -257,9 +258,9 @@
 					</div>
 				</div>
 			</div>
-		</header>
+		</header> -->
 		<!-- Header End -->
-		<div class="sub-header align-center">
+		<!-- <div class="sub-header align-center">
 			<div class="subheader-holder" style="background:url(assets/extra-images/subheader-img2-1.jpg) no-repeat; background-size: cover; padding-top: 60px; padding-bottom: 30px; margin-top: 0px; margin-bottom: 0px; min-height: 186px !important;">
 				<div class="container">
 					<div class="row">
@@ -286,65 +287,73 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- Main Section Start -->
-<div class="main-section">
-    <div class="page-section nopadding cs-nomargin" style="margin-top: 0px; padding-top: 60px; padding-bottom: 30px; margin-bottom: 0px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="signup-form login-form">
-                        <div class="tab-content">
-                            <div id="signup_box" class="tab-pane fade in active">
-                                <div class="scetion-title">
-                                    <h2>Sign Up</h2>
-                                </div>
-                                <div class="input-info">
-                                    <div class="row">
-                                        <form class="wp-user-form webkit">
-                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                                                <div class="field-holder">
-                                                    <input type="text" size="20" tabindex="11" value="Username">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                                                <div class="field-holder">
-                                                    <input type="password" value="Password">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                                                <div class="field-holder">
-                                                    <input type="text" placeholder="Last Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                                                <div class="field-holder">
-                                                    <input type="email" placeholder="Email">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                                                <div class="shortcode-ajax-signup-button input-button-loader">
-                                                    <input type="button" class="cs-bgcolor user-submit acc-submit" value="Create Account">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                                                <div class="login-section">
-                                                    <i class="icon-user-add"></i> Already have an account?
-                                                    <a href="#login_box" data-toggle="tab" class="login-link-page">Login here</a>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Main Section End -->
+		<div class="main-section">
+			<div class="page-section nopadding cs-nomargin"
+				style="margin-top: 0px; padding-top: 60px; padding-bottom: 30px; margin-bottom: 0px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="signup-form login-form">
+								<div class="tab-content">
+									<div id="signup_box" class="tab-pane fade in active">
+										<div class="scetion-title">
+											<h2>Sign Up</h2>
+										</div>
+										<div class="input-info">
+											<div class="row">
+												<form action="{% url 'register' %}" method='post'
+													class="wp-user-form webkit">
+													<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+														<div class="field-holder">
+															{% csrf_token %}
+															
+															{{ form.as_p }}
+														</div>
+													</div>
+													<!-- <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+														<div class="field-holder">
+															{{ form.confirm_password }}
+														</div>
+													</div> -->
+													<!-- <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+														<div class="field-holder">
+															<input type="text" placeholder="Last Name">
+														</div>
+													</div>
+													<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12"> -->
+													<!-- <div class="field-holder">
+															<input type="email" placeholder="Email">
+														</div>
+													</div> -->
+													<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+														<div>
+															<!-- <div class="shortcode-ajax-signup-button input-button-loader"> -->
+															<input type="submit"
+																class="cs-bgcolor user-submit acc-submit"
+																value="Create Account">
+														</div>
+													</div>
+													<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+														<div class="login-section">
+															<i class="icon-user-add"></i> Already have an account?
+															<a href="#login_box" data-toggle="tab"
+																class="login-link-page">Login here</a>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main Section End -->
 		<!-- Footer Start -->
 		<footer id="footer" class="footer-style-2">
 			<div class="footer-widget">
@@ -360,7 +369,8 @@
 										<div class="field-holder">
 											<label>
 												<i class=" icon-envelope3"></i>
-												<input type="text" class="field-input" placeholder=" Enter Your Email Address...">
+												<input type="text" class="field-input"
+													placeholder=" Enter Your Email Address...">
 											</label>
 										</div>
 										<div class="field-holder btn-holder">
@@ -486,10 +496,14 @@
 											<div class="clearfix"></div>
 											<ul class="login-switches">
 												<li>
-													<a href="restaurant-dashboard.html" class="btn-red demo-publisher-user"><i class="icon-food"></i> Restaurant</a>
+													<a href="restaurant-dashboard.html"
+														class="btn-red demo-publisher-user"><i class="icon-food"></i>
+														Restaurant</a>
 												</li>
 												<li>
-													<a href="buyer-dashboard.html" class="btn-red btn-green demo-buyer-user"><i class="icon-user4"></i> Buyer</a>
+													<a href="buyer-dashboard.html"
+														class="btn-red btn-green demo-buyer-user"><i
+															class="icon-user4"></i> Buyer</a>
 												</li>
 											</ul>
 										</div>
@@ -502,7 +516,8 @@
 											<input type="password" value="Password">
 										</div>
 										<div class="forget-password">
-											<a data-toggle="tab" href="#user-password" class="cs-forgot-switch forgot-switch">Forgot Password?</a>
+											<a data-toggle="tab" href="#user-password"
+												class="cs-forgot-switch forgot-switch">Forgot Password?</a>
 										</div>
 										<div class="input-filed input-field-btn">
 											<div class="ajax-login-button input-button-loader">
@@ -512,15 +527,29 @@
 									</form>
 									<div class="signin-tab-link forget-password">
 										New Here?
-										<a data-toggle="tab" href="#user-register" class="foodbakery-dev-login-box-btn forgot-switch">Signup</a>
+										<a data-toggle="tab" href="#user-register"
+											class="foodbakery-dev-login-box-btn forgot-switch">Signup</a>
 									</div>
 									<div class="footer-element comment-form-social-connect social_login_ui ">
 										<div class="social-media">
 											<h6><span>Login with</span></h6>
 											<ul>
-												<li><a href="#" title="Facebook" data-original-title="Facebook" class="social_login_login_facebook facebook"><span class="social-mess-top fb-social-login" style="display:none">Please set API key</span><i class="icon-facebook"></i>Sign In With Facebook</a></li>
-												<li><a href="#" title="Twitter" data-original-title="twitter" class="social_login_login_twitter twitter"><span class="social-mess-top tw-social-login" style="display:none">Please set API key</span><i class="icon-twitter3"></i>Sign In With Twitter</a></li>
-												<li><a href="#" rel="nofollow" title="google-plus" data-original-title="google+" class="social_login_login_google gplus"><span class="social-mess-top gplus-social-login" style="display:none">Please set API key</span><i class="icon-google4"></i>Sign In With Google</a></li>
+												<li><a href="#" title="Facebook" data-original-title="Facebook"
+														class="social_login_login_facebook facebook"><span
+															class="social-mess-top fb-social-login"
+															style="display:none">Please set API key</span><i
+															class="icon-facebook"></i>Sign In With Facebook</a></li>
+												<li><a href="#" title="Twitter" data-original-title="twitter"
+														class="social_login_login_twitter twitter"><span
+															class="social-mess-top tw-social-login"
+															style="display:none">Please set API key</span><i
+															class="icon-twitter3"></i>Sign In With Twitter</a></li>
+												<li><a href="#" rel="nofollow" title="google-plus"
+														data-original-title="google+"
+														class="social_login_login_google gplus"><span
+															class="social-mess-top gplus-social-login"
+															style="display:none">Please set API key</span><i
+															class="icon-google4"></i>Sign In With Google</a></li>
 											</ul>
 										</div>
 									</div>
@@ -529,7 +558,8 @@
 						</div>
 						<div id="user-register" class="tab-pane fade">
 							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+										aria-hidden="true">×</span> </button>
 								<h5 id="myModalLabel" class="modal-title">Sign Up</h5>
 							</div>
 							<div class="modal-body">
@@ -583,17 +613,33 @@
 									</form>
 									<div class="register_content"></div>
 									<div class="create- signin-tab-link ">Already have an account?
-										<a data-toggle="tab" href="#user-login-tab" class="foodbakery-dev-signup-box-btn">Login here</a>
+										<a data-toggle="tab" href="#user-login-tab"
+											class="foodbakery-dev-signup-box-btn">Login here</a>
 									</div>
 									<div class="footer-element comment-form-social-connect social_login_ui">
 										<div class="social-media">
 											<h6><span>Login with</span></h6>
 											<ul>
-												<li><a href="javascript:void(0);" title="Facebook" data-original-title="Facebook" class="social_login_login_facebook facebook"><span class="social-mess-top fb-social-login" style="display:none">Please set API key</span><i class="icon-facebook"></i>Sign In With
+												<li><a href="javascript:void(0);" title="Facebook"
+														data-original-title="Facebook"
+														class="social_login_login_facebook facebook"><span
+															class="social-mess-top fb-social-login"
+															style="display:none">Please set API key</span><i
+															class="icon-facebook"></i>Sign In With
 														Facebook</a></li>
-												<li><a href="javascript:void(0);" title="Twitter" data-original-title="twitter" class="social_login_login_twitter twitter"><span class="social-mess-top tw-social-login" style="display:none">Please set API key</span><i class="icon-twitter3"></i>Sign In With
+												<li><a href="javascript:void(0);" title="Twitter"
+														data-original-title="twitter"
+														class="social_login_login_twitter twitter"><span
+															class="social-mess-top tw-social-login"
+															style="display:none">Please set API key</span><i
+															class="icon-twitter3"></i>Sign In With
 														Twitter</a></li>
-												<li><a href="javascript:void(0);" rel="nofollow" title="google-plus" data-original-title="google+" class="social_login_login_google gplus"><span class="social-mess-top gplus-social-login" style="display:none">Please set API key</span><i class="icon-google4"></i>Sign In With
+												<li><a href="javascript:void(0);" rel="nofollow" title="google-plus"
+														data-original-title="google+"
+														class="social_login_login_google gplus"><span
+															class="social-mess-top gplus-social-login"
+															style="display:none">Please set API key</span><i
+															class="icon-google4"></i>Sign In With
 														Google</a></li>
 											</ul>
 										</div>
@@ -618,15 +664,18 @@
 												email with instructions on how to change your password</span>
 											<div class="input-filed">
 												<i class="icon-email"></i>
-												<input type="text" placeholder="Enter email address..." name="user_input">
+												<input type="text" placeholder="Enter email address..."
+													name="user_input">
 											</div>
 											<div class="input-filed input-field-btn">
 												<div class="ajax-forgot-button input-button-loader">
-													<input type="submit" class="reset_password cs-bgcolor" name="submit" value="Submit">
+													<input type="submit" class="reset_password cs-bgcolor" name="submit"
+														value="Submit">
 												</div>
 											</div>
 											<div class="forget-password">
-												<a data-toggle="tab" href="#user-login-tab" class="cs-login-switch forgot-switch">Login Here</a>
+												<a data-toggle="tab" href="#user-login-tab"
+													class="cs-login-switch forgot-switch">Login Here</a>
 											</div>
 										</div>
 									</form>
@@ -639,21 +688,21 @@
 		</div>
 	</div>
 	<!-- Modal Popup End -->
-	<script src="assets/js/responsive.menu.js"></script>
-	<script src="assets/js/swiper.min.js"></script>
-	<script src="assets/js/bootstrap-datepicker.js"></script>
-	<script src="assets/js/chosen.js"></script>
-	<script src="assets/js/counter.js"></script>
-	<script src="assets/js/fliters.js"></script>
-	<script src="assets/js/jquery.fitvids.js"></script>
-	<script src="assets/js/jquery.growl.js"></script>
-	<script src="assets/js/jquery.matchHeight-min.js"></script>
-	<script src="assets/js/masonry.pkgd.js"></script>
-	 <script src="assets/js/skills-progress.js"></script>
-	<script src="assets/js/bootstrap-slider.js"></script>
-	<script src="assets/js/wow.js"></script>
-	<script src="assets/js/functions-plugin.js"></script>
-	<script src="assets/js/functions.js"></script>
+	<script src="{% static 'js/responsive.menu.js' %}"></script>
+	<script src="{% static 'js/swiper.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+	<script src="{% static 'js/chosen.js' %}"></script>
+	<script src="{% static 'js/counter.js' %}"></script>
+	<script src="{% static 'js/fliters.js' %}"></script>
+	<script src="{% static 'js/jquery.fitvids.js' %}"></script>
+	<script src="{% static 'js/jquery.growl.js' %}"></script>
+	<script src="{% static 'js/jquery.matchHeight-min.js' %} "></script>
+	<script src="{% static 'js/masonry.pkgd.js' %}"></script>
+	<script src="{% static 'js/skills-progress.js' %}"></script>
+	<script src="{% static 'js/bootstrap-slider.js' %}"></script>
+	<script src="{% static 'js/wow.js' %}"></script>
+	<script src="{% static 'js/functions-plugin.js' %}"></script>
+	<script src="{% static 'js/functions.js' %}"></script>
 </body>
 
 </html>
